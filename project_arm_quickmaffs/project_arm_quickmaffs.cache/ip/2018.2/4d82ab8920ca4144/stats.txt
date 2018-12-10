@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Mon Dec 10 20:37:54 UTC 2018
+VLNV: xilinx.com:user:quickmaffs:1.0
+SynthRuntime: 2045
