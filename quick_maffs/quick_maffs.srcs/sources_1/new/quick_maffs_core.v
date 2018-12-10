@@ -34,10 +34,10 @@
 
 module quick_maffs_core(
     input [31:0] instruction,
-    input [8191:0] input_data,
+    input [4095:0] input_data,
     input [255:0] key,
     input clk,
-    output reg [8191:0] output_data
+    output reg [4095:0] output_data
     );
     
     wire [3:0] flags;
