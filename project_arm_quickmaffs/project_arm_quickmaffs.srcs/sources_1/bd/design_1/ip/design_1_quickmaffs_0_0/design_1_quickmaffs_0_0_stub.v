@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Mon Dec 10 19:52:38 2018
+// Date        : Mon Dec 10 23:34:19 2018
 // Host        : DESKTOP-A3K18PQ running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               C:/Users/varou/OpenSesame/project_arm_quickmaffs/project_arm_quickmaffs.srcs/sources_1/bd/design_1/ip/design_1_quickmaffs_0_0/design_1_quickmaffs_0_0_stub.v
@@ -14,12 +14,14 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* X_CORE_INFO = "quickmaffs_v1_0,Vivado 2018.2" *)
-module design_1_quickmaffs_0_0(s00_axi_awaddr, s00_axi_awprot, 
-  s00_axi_awvalid, s00_axi_awready, s00_axi_wdata, s00_axi_wstrb, s00_axi_wvalid, 
-  s00_axi_wready, s00_axi_bresp, s00_axi_bvalid, s00_axi_bready, s00_axi_araddr, 
-  s00_axi_arprot, s00_axi_arvalid, s00_axi_arready, s00_axi_rdata, s00_axi_rresp, 
-  s00_axi_rvalid, s00_axi_rready, s00_axi_aclk, s00_axi_aresetn)
-/* synthesis syn_black_box black_box_pad_pin="s00_axi_awaddr[10:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[10:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,s00_axi_aclk,s00_axi_aresetn" */;
+module design_1_quickmaffs_0_0(big_buff_raw, big_buff_out, s00_axi_awaddr, 
+  s00_axi_awprot, s00_axi_awvalid, s00_axi_awready, s00_axi_wdata, s00_axi_wstrb, 
+  s00_axi_wvalid, s00_axi_wready, s00_axi_bresp, s00_axi_bvalid, s00_axi_bready, 
+  s00_axi_araddr, s00_axi_arprot, s00_axi_arvalid, s00_axi_arready, s00_axi_rdata, 
+  s00_axi_rresp, s00_axi_rvalid, s00_axi_rready, s00_axi_aclk, s00_axi_aresetn)
+/* synthesis syn_black_box black_box_pad_pin="big_buff_raw[4095:0],big_buff_out[4095:0],s00_axi_awaddr[10:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[10:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,s00_axi_aclk,s00_axi_aresetn" */;
+  output [4095:0]big_buff_raw;
+  input [4095:0]big_buff_out;
   input [10:0]s00_axi_awaddr;
   input [2:0]s00_axi_awprot;
   input s00_axi_awvalid;

@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-//Date        : Mon Dec 10 19:50:34 2018
+//Date        : Mon Dec 10 23:32:10 2018
 //Host        : DESKTOP-A3K18PQ running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -134,6 +134,7 @@ module design_1
   wire ps7_0_axi_periph_M00_AXI_WREADY;
   wire [3:0]ps7_0_axi_periph_M00_AXI_WSTRB;
   wire ps7_0_axi_periph_M00_AXI_WVALID;
+  wire [4095:0]quickmaffs_0_big_buff_raw;
   wire [0:0]rst_ps7_0_50M_interconnect_aresetn;
   wire [0:0]rst_ps7_0_50M_peripheral_aresetn;
 
@@ -266,7 +267,9 @@ module design_1
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
   design_1_quickmaffs_0_0 quickmaffs_0
-       (.s00_axi_aclk(processing_system7_0_FCLK_CLK0),
+       (.big_buff_out(quickmaffs_0_big_buff_raw),
+        .big_buff_raw(quickmaffs_0_big_buff_raw),
+        .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[10:0]),
         .s00_axi_aresetn(rst_ps7_0_50M_peripheral_aresetn),
         .s00_axi_arprot(ps7_0_axi_periph_M00_AXI_ARPROT),

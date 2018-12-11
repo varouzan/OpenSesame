@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Dec 10 19:56:27 2018
+| Date             : Mon Dec 10 23:38:22 2018
 | Host             : DESKTOP-A3K18PQ running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.697        |
+| Total On-Chip Power (W)  | 1.702        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.555        |
+| Dynamic (W)              | 1.561        |
 | Device Static (W)        | 0.142        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 65.4         |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.010 |        3 |       --- |             --- |
-| Slice Logic             |     0.005 |     8308 |       --- |             --- |
-|   LUT as Logic          |     0.005 |     2249 |     53200 |            4.23 |
-|   F7/F8 Muxes           |    <0.001 |      736 |     53200 |            1.38 |
-|   Register              |    <0.001 |     4947 |    106400 |            4.65 |
+| Clocks                  |     0.011 |        3 |       --- |             --- |
+| Slice Logic             |     0.007 |    10197 |       --- |             --- |
+|   LUT as Logic          |     0.007 |     3209 |     53200 |            6.03 |
+|   F7/F8 Muxes           |    <0.001 |     1600 |     53200 |            3.01 |
+|   Register              |    <0.001 |     5012 |    106400 |            4.71 |
 |   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
 |   LUT as Shift Register |    <0.001 |       60 |     17400 |            0.34 |
 |   Others                |     0.000 |      186 |       --- |             --- |
-| Signals                 |     0.010 |     6488 |       --- |             --- |
+| Signals                 |     0.013 |     6648 |       --- |             --- |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.142 |          |           |                 |
-| Total                   |     1.697 |          |           |                 |
+| Total                   |     1.702 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.041 |       0.026 |      0.015 |
+| Vccint    |       1.000 |     0.046 |       0.031 |      0.015 |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -149,8 +149,8 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| design_1_wrapper                                 |     1.555 |
-|   design_1_i                                     |     1.555 |
+| design_1_wrapper                                 |     1.561 |
+|   design_1_i                                     |     1.561 |
 |     processing_system7_0                         |     1.534 |
 |       inst                                       |     1.534 |
 |     ps7_0_axi_periph                             |     0.004 |
@@ -179,9 +179,9 @@ Table of Contents
 |               WR.b_channel_0                     |    <0.001 |
 |                 bid_fifo_0                       |    <0.001 |
 |                 bresp_fifo_0                     |    <0.001 |
-|     quickmaffs_0                                 |     0.017 |
-|       inst                                       |     0.017 |
-|         quickmaffs_v1_0_S00_AXI_inst             |     0.017 |
+|     quickmaffs_0                                 |     0.022 |
+|       inst                                       |     0.022 |
+|         quickmaffs_v1_0_S00_AXI_inst             |     0.022 |
 |     rst_ps7_0_50M                                |    <0.001 |
 |       U0                                         |    <0.001 |
 |         EXT_LPF                                  |    <0.001 |

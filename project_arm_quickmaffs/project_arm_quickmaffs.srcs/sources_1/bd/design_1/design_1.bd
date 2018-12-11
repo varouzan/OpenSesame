@@ -500,6 +500,8 @@
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>quickmaffs_0_big_buff_raw</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="quickmaffs_0" spirit:portRef="big_buff_raw"/>
+        <spirit:internalPortReference spirit:componentRef="quickmaffs_0" spirit:portRef="big_buff_out"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

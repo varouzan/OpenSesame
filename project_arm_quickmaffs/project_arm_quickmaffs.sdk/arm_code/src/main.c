@@ -20,33 +20,54 @@ u32 recv;
 u32 send=346;
 
 
+
+
 int main(){
+	raw_32[0]=123;
+	raw_32[1]=1234;
+	raw_32[2]=6546;
+	raw_32[3]=69;
 	int addr;
+	int i;
 	while(1){
+		i=0;
 		memcpy(raw_32,raw,512);
-		xil_printf("%s \n",raw);
+		xil_printf(" RAW: %s \n",raw);
 		print("stuff \n");
-		//memcpy(out,raw_32,512);
+		memcpy(out,raw_32,512);
 		for(addr=QUICKMAFFS_S00_AXI_SLV_REG1_OFFSET; addr<=QUICKMAFFS_S00_AXI_SLV_REG128_OFFSET;addr=addr+4){
-			QUICKMAFFS_mWriteReg(XPAR_QUICKMAFFS_0_S00_AXI_BASEADDR, addr, raw_32[addr/4-1]);
+			QUICKMAFFS_mWriteReg(XPAR_QUICKMAFFS_0_S00_AXI_BASEADDR, addr, raw_32[i++]);
 		}
 		sleep(1);
-//		for(addr=QUICKMAFFS_S00_AXI_SLV_REG1_OFFSET; addr<=QUICKMAFFS_S00_AXI_SLV_REG128_OFFSET;addr=addr+4){
-//			out_32[addr/4-1]=QUICKMAFFS_mReadReg(XPAR_QUICKMAFFS_0_S00_AXI_BASEADDR, addr);
-//		}
+		i=0;
 		for(addr=QUICKMAFFS_S00_AXI_SLV_REG129_OFFSET; addr<=QUICKMAFFS_S00_AXI_SLV_REG256_OFFSET;addr=addr+4){
-			out_32[addr/516-1]=QUICKMAFFS_mReadReg(XPAR_QUICKMAFFS_0_S00_AXI_BASEADDR, addr);
+			out_32[i++]=QUICKMAFFS_mReadReg(XPAR_QUICKMAFFS_0_S00_AXI_BASEADDR, addr);
+			i++;
 		}
 		memcpy(out,out_32,512);
+		xil_printf("OUT:%s \n",out);
 
+
+
+//		i=0;
+//		for(addr=QUICKMAFFS_S00_AXI_SLV_REG1_OFFSET; addr<=QUICKMAFFS_S00_AXI_SLV_REG4_OFFSET;addr=addr+4){
+//			QUICKMAFFS_mWriteReg(XPAR_QUICKMAFFS_0_S00_AXI_BASEADDR, addr, raw_32[i]);
+//			i++;
+//		}
+//		sleep(1);
+//		i=0;
+//		for(addr=QUICKMAFFS_S00_AXI_SLV_REG129_OFFSET; addr<=QUICKMAFFS_S00_AXI_SLV_REG132_OFFSET;addr=addr+4){
+//			out_32[i]=QUICKMAFFS_mReadReg(XPAR_QUICKMAFFS_0_S00_AXI_BASEADDR, addr);
+//			i++;
+//		}
+//		xil_printf("%d , %d, %d, %d \n",out_32[0],out_32[1],out_32[2],out_32[3]);
 
 //		QUICKMAFFS_mWriteReg(XPAR_QUICKMAFFS_0_S00_AXI_BASEADDR, QUICKMAFFS_S00_AXI_SLV_REG102_OFFSET,send);
 //		sleep(1);
 //		send++;
 //		recv=QUICKMAFFS_mReadReg(XPAR_QUICKMAFFS_0_S00_AXI_BASEADDR, QUICKMAFFS_S00_AXI_SLV_REG230_OFFSET);
-//		sleep(1);
-//		//xil_printf("malaka \n\r");
-//		print("extra wire\n");
+//		xil_printf("%d \n\r",recv);
+		//print("extra wire\n");
 
 	}
 }
