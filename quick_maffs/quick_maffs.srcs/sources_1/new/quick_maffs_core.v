@@ -45,7 +45,7 @@ module quick_maffs_core(
     wire [3:0] data_bus_width, alu_instruction;
     wire [4095:0] op1, op2, alu_result;
     
-    quick_maffs_alu alu(.op1(op1), .op2(op2), .instruction(alu_instruction), .result(alu_result));
+    quick_maffs_alu alu(.op1(op1), .op2(op2), .instruction(alu_instruction), .result(alu_result)); // shared resource
     
     assign flags = instruction[31:28];
     assign opcode = instruction[27:4];
