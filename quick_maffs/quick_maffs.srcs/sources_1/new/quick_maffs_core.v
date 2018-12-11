@@ -26,7 +26,7 @@
 //
 // Currently supported instructions:
 //  - AE5DEC: Decrypt AES encrypted data
-//  - AE5EC
+//  - AE5E7: Encrypt to AES ciphertext
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -42,7 +42,10 @@ module quick_maffs_core(
     
     wire [3:0] flags;
     wire [23:0] opcode;
-    wire [3:0] data_bus_width;
+    wire [3:0] data_bus_width, alu_instruction;
+    wire [4095:0] op1, op2, alu_result;
+    
+    quick_maffs_alu alu(.op1(op1), .op2(op2), .instruction(alu_instruction), .result(alu_result));
     
     assign flags = instruction[31:28];
     assign opcode = instruction[27:4];
