@@ -1,5 +1,4 @@
-*.cache
-*.runs
+*/*.runs
 # Created by https://www.gitignore.io/api/vivado,vim
 # Edit at https://www.gitignore.io/?templates=vivado,vim
 
