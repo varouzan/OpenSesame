@@ -22,13 +22,18 @@
 
 module quick_aes(
     input enable,
+    output [4095:0] op1,
+    output [4095:0] op2,
+    output [3:0] inst,
+    input [4095:0] alu_result,
     input [4095:0] input_data,
     input [2:0] key_size, // one-hot-bit encoding of keysize; either 128, 192, or 256 bit (msb-lsb)
     input [255:0] key,
     input [4095:0] output_data
     );
     
-    reg [3:0] rounds;
+    reg [3:0] max_rounds;
+    
     wire [4095:0] state;
     
     always @(*)
@@ -37,15 +42,15 @@ module quick_aes(
             case (key_size)
                 3'b001:
                 begin
-                    rounds = 1'hA; // 128 bit
+                    max_rounds = 1'hA; // 128 bit
                 end
                 3'b010:
                 begin
-                    rounds = 1'hC; // 192 bit
+                    max_rounds = 1'hC; // 192 bit
                 end
                 3'b100:
                 begin
-                    rounds = 1'hE; // 256 bit
+                    max_rounds = 1'hE; // 256 bit
                 end
             endcase
             
