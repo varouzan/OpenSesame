@@ -47,15 +47,26 @@
 // DO NOT MODIFY THIS FILE.
 
 
+<<<<<<< HEAD:opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_qmaxi_0_0/sim/design_1_qmaxi_0_0.v
 // IP VLNV: user.org:user:qmaxi:1.0
 // IP Revision: 4
+=======
+// IP VLNV: xilinx.com:user:quickmaffs:2.0
+// IP Revision: 3
+>>>>>>> c9646d57943ad1e4f0c88aff69c9916224d0f453:project_arm_quickmaffs/project_arm_quickmaffs.ip_user_files/bd/design_1/ip/design_1_quickmaffs_0_0/sim/design_1_quickmaffs_0_0.v
 
 `timescale 1ns/1ps
 
 (* DowngradeIPIdentifiedWarnings = "yes" *)
+<<<<<<< HEAD:opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_qmaxi_0_0/sim/design_1_qmaxi_0_0.v
 module design_1_qmaxi_0_0 (
   big_buff_out,
   big_buff_raw,
+=======
+module design_1_quickmaffs_0_0 (
+  big_buff_raw,
+  big_buff_out,
+>>>>>>> c9646d57943ad1e4f0c88aff69c9916224d0f453:project_arm_quickmaffs/project_arm_quickmaffs.ip_user_files/bd/design_1/ip/design_1_quickmaffs_0_0/sim/design_1_quickmaffs_0_0.v
   s00_axi_awaddr,
   s00_axi_awprot,
   s00_axi_awvalid,
@@ -79,8 +90,13 @@ module design_1_qmaxi_0_0 (
   s00_axi_aresetn
 );
 
+<<<<<<< HEAD:opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_qmaxi_0_0/sim/design_1_qmaxi_0_0.v
 input wire [4095 : 0] big_buff_out;
 output wire [4095 : 0] big_buff_raw;
+=======
+output wire [4095 : 0] big_buff_raw;
+input wire [4095 : 0] big_buff_out;
+>>>>>>> c9646d57943ad1e4f0c88aff69c9916224d0f453:project_arm_quickmaffs/project_arm_quickmaffs.ip_user_files/bd/design_1/ip/design_1_quickmaffs_0_0/sim/design_1_quickmaffs_0_0.v
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *)
 input wire [10 : 0] s00_axi_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *)
@@ -132,8 +148,13 @@ input wire s00_axi_aresetn;
     .C_S00_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
     .C_S00_AXI_ADDR_WIDTH(11)  // Width of S_AXI address bus
   ) inst (
+<<<<<<< HEAD:opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_qmaxi_0_0/sim/design_1_qmaxi_0_0.v
     .big_buff_out(big_buff_out),
     .big_buff_raw(big_buff_raw),
+=======
+    .big_buff_raw(big_buff_raw),
+    .big_buff_out(big_buff_out),
+>>>>>>> c9646d57943ad1e4f0c88aff69c9916224d0f453:project_arm_quickmaffs/project_arm_quickmaffs.ip_user_files/bd/design_1/ip/design_1_quickmaffs_0_0/sim/design_1_quickmaffs_0_0.v
     .s00_axi_awaddr(s00_axi_awaddr),
     .s00_axi_awprot(s00_axi_awprot),
     .s00_axi_awvalid(s00_axi_awvalid),

@@ -2,10 +2,17 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
+<<<<<<< HEAD
     <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1544499395"/>
     <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1544499395"/>
     <Generation Name="SIMULATION" State="GENERATED" Timestamp="1544499395"/>
     <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1544499395"/>
+=======
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1544502732"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1544502732"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1544502732"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1544502732"/>
+>>>>>>> c9646d57943ad1e4f0c88aff69c9916224d0f453
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -15,7 +22,11 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
+<<<<<<< HEAD
       <File Name="ip/design_1_ps7_0_axi_periph_0/design_1_ps7_0_axi_periph_0.xci" Type="IP">
+=======
+      <File Name="ip\design_1_ps7_0_axi_periph_0\design_1_ps7_0_axi_periph_0.xci" Type="IP">
+>>>>>>> c9646d57943ad1e4f0c88aff69c9916224d0f453
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

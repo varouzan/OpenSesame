@@ -6,7 +6,11 @@
 <Project Version="7" Minor="38" Path="/home/danman/sauce/vivado/OpenSesame/project_arm_quickmaffs/project_arm_quickmaffs.tmp/quickmaffs_v2_0_project/quickmaffs_v2_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
+<<<<<<< HEAD
     <Option Name="Id" Val="f5c0a1e4f0f04e59931c1ee7fa4bd4d9"/>
+=======
+    <Option Name="Id" Val="82482a19e4e841b2927018a542531686"/>
+>>>>>>> c9646d57943ad1e4f0c88aff69c9916224d0f453
     <Option Name="Part" Val="xc7z020clg484-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

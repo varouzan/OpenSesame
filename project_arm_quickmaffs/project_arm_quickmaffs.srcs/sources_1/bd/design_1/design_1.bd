@@ -498,6 +498,14 @@
         <spirit:internalPortReference spirit:componentRef="rst_ps7_0_50M" spirit:portRef="interconnect_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="ARESETN"/>
       </spirit:adHocConnection>
+<<<<<<< HEAD
+=======
+      <spirit:adHocConnection>
+        <spirit:name>quickmaffs_0_big_buff_raw</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="quickmaffs_0" spirit:portRef="big_buff_raw"/>
+        <spirit:internalPortReference spirit:componentRef="quickmaffs_0" spirit:portRef="big_buff_out"/>
+      </spirit:adHocConnection>
+>>>>>>> c9646d57943ad1e4f0c88aff69c9916224d0f453
     </spirit:adHocConnections>
     <spirit:hierConnections>
       <spirit:hierConnection spirit:interfaceRef="DDR/processing_system7_0_DDR">

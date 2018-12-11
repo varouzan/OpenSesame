@@ -48,12 +48,18 @@
 
 
 // IP VLNV: xilinx.com:user:quickmaffs:2.0
-// IP Revision: 1
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
 (* DowngradeIPIdentifiedWarnings = "yes" *)
+<<<<<<< HEAD:project_arm_quickmaffs/project_arm_quickmaffs.srcs/sources_1/bd/design_1/ip/design_1_quickmaffs_0_1/sim/design_1_quickmaffs_0_1.v
 module design_1_quickmaffs_0_1 (
+=======
+module design_1_quickmaffs_0_0 (
+  big_buff_raw,
+  big_buff_out,
+>>>>>>> c9646d57943ad1e4f0c88aff69c9916224d0f453:project_arm_quickmaffs/project_arm_quickmaffs.srcs/sources_1/bd/design_1/ip/design_1_quickmaffs_0_0/sim/design_1_quickmaffs_0_0.v
   s00_axi_awaddr,
   s00_axi_awprot,
   s00_axi_awvalid,
@@ -77,6 +83,8 @@ module design_1_quickmaffs_0_1 (
   s00_axi_aresetn
 );
 
+output wire [4095 : 0] big_buff_raw;
+input wire [4095 : 0] big_buff_out;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *)
 input wire [10 : 0] s00_axi_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *)
@@ -128,6 +136,8 @@ input wire s00_axi_aresetn;
     .C_S00_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
     .C_S00_AXI_ADDR_WIDTH(11)  // Width of S_AXI address bus
   ) inst (
+    .big_buff_raw(big_buff_raw),
+    .big_buff_out(big_buff_out),
     .s00_axi_awaddr(s00_axi_awaddr),
     .s00_axi_awprot(s00_axi_awprot),
     .s00_axi_awvalid(s00_axi_awvalid),
