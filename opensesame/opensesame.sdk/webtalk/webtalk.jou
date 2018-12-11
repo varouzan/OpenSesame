@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# 
+# Start of session at: Mon Dec 10 23:52:36 2018
+# Process ID: 6641
+# Current directory: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.sdk/webtalk/webtalk.log
+# Journal file: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -15,8 +15,8 @@
 	)
 	(
 		// Users to add ports here
-        //output reg[4095:0] big_buff_raw,
-        //input[4095:0] big_buff_out,
+        output wire [4095:0] big_buff_raw,
+        input wire [4095:0] big_buff_out,
 		
 		// User ports ends
 		// Do not modify the ports beyond this line
@@ -47,8 +47,8 @@
 	);
 	
 //
-    wire [4095:0] big_buff_raw;
-    wire [4095:0] big_buff_out;	
+//    wire [4095:0] big_buff_raw;
+//    wire [4095:0] big_buff_out;	
 // Instantiation of Axi Bus Interface S00_AXI
 	quickmaffs_v1_0_S00_AXI # ( 
 		.C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
@@ -335,7 +335,7 @@
 	);
 
 	// Add user logic here
-    assign big_buff_out=big_buff_raw;
+    // assign big_buff_out=big_buff_raw;
 	// User logic ends
 
 	endmodule
