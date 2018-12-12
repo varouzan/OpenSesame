@@ -24,42 +24,43 @@ module quick_maffs_alu(
     input [4095:0] op1,
     input [4095:0] op2,
     input [3:0] instruction,
+    input clk,
     output reg [4095:0] result
     );
     
     always @(*)
         case (instruction)
-            1'h0: // blank low value
+            4'h0: // blank low value
             begin
-                assign result = 0;
+                result = 4096'b0;
             end
-            1'h1: // blank high value
+            4'h1: // blank high value
             begin
-                assign result = 1;
+                result = ~(4096'b0); // LOL
             end
-            1'h2:
+            4'h2:
             begin // invert only op1
-                assign result = ~op1;
+                result = ~op1;
             end
-            1'h3:
+            4'h3:
             begin
-                assign result = op1 + op2;
+                result = op1 + op2;
             end
-            1'h4: // multiply operands
+            4'h4: // multiply operands
             begin
-                assign result = op1 * op2;
+                result = op1 * op2;
             end
-            1'h5: // bitwise-and operands
+            4'h5: // bitwise-and operands
             begin
-                assign result = op1 & op2;
+                result = op1 & op2;
             end
-            1'h6: // bitwise-or operands
+            4'h6: // bitwise-or operands
             begin
-                assign result = op1 | op2;
+                result = op1 | op2;
             end
-            1'h7: // bitwise-xor operands
+            4'h7: // bitwise-xor operands
             begin
-                assign result = op1 ^ op2;
+                result = op1 ^ op2;
             end
         endcase
 endmodule
