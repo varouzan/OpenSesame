@@ -33,19 +33,26 @@
 
 
 module quick_maffs_core(
+    input enable,
+    input clk,
+    
     input [31:0] instruction,
     input [4095:0] input_data,
     input [255:0] key,
-    input clk,
     output reg [4095:0] output_data
     );
     
     wire [3:0] flags;
     wire [23:0] opcode;
-    wire [3:0] data_bus_width, alu_instruction;
-    wire [4095:0] op1, op2, alu_result;
+    wire [3:0] data_bus_width, instruction_alu;
+    wire [4095:0] op1_alu, op2_alu, result_alu;
+    wire [127:0] op1_multiplier, op2_multiplier;
+    wire [255:0] result_multipier;
     
-    quick_maffs_alu alu(.op1(op1), .op2(op2), .instruction(alu_instruction), .result(alu_result)); // shared resource
+    // SHARED RESOURCES
+    
+    quick_maffs_alu alu(.op1(op1_alu), .op2(op2_alu), .instruction(instruction_alu), .result(result_alu));
+    quick_maffs_multipler_dsp multipler(.op1(op1_multiplier), .op2(op2_multiplier), .result(result_multiplier));
     
     assign flags = instruction[31:28];
     assign opcode = instruction[27:4];

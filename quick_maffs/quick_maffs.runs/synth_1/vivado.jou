@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Dec 13 17:44:38 2018
+# Process ID: 47014
+# Current directory: /home/rafi/Design/OpenSesame/quick_maffs/quick_maffs.runs/synth_1
+# Command line: vivado -log quick_maffs_multiplier_dsp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source quick_maffs_multiplier_dsp.tcl
+# Log file: /home/rafi/Design/OpenSesame/quick_maffs/quick_maffs.runs/synth_1/quick_maffs_multiplier_dsp.vds
+# Journal file: /home/rafi/Design/OpenSesame/quick_maffs/quick_maffs.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source quick_maffs_multiplier_dsp.tcl -notrace
