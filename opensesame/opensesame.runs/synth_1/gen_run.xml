@@ -1,18 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1544504167">
-  <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="design_1_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="design_1_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="design_1_wrapper.vds"/>
-  <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
-  <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1544747150">
+  <File Type="PA-TCL" Name="aes.tcl"/>
+  <File Type="REPORTS-TCL" Name="aes_reports.tcl"/>
+  <File Type="RDS-RDS" Name="aes.vds"/>
+  <File Type="RDS-DCP" Name="aes.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="aes_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="aes_utilization_synth.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/byte_mixcolum.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/byte_mixcolum.v"/>
+        <Attr Name="ImportTime" Val="1108377662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/keysched.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/keysched.v"/>
+        <Attr Name="ImportTime" Val="1108377662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/mixcolum.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/mixcolum.v"/>
+        <Attr Name="ImportTime" Val="1108377662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/sbox.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/sbox.v"/>
+        <Attr Name="ImportTime" Val="1108377662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/subbytes.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/subbytes.v"/>
+        <Attr Name="ImportTime" Val="1108377662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/word_mixcolum.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/word_mixcolum.v"/>
+        <Attr Name="ImportTime" Val="1108377662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/aes.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/aes.v"/>
+        <Attr Name="ImportTime" Val="1108377662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -20,6 +81,33 @@
     </File>
     <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/coproc.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/qmalu.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/wb_aescontroller.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/wb_aescontroller.v"/>
+        <Attr Name="ImportTime" Val="1127121318"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -27,23 +115,25 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="design_1_wrapper"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="aes"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/aes.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/aes.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_1_qmaxi_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_50M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
 </GenRun>
