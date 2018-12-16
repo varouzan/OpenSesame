@@ -15,8 +15,11 @@
 	)
 	(
 		// Users to add ports here
+		output wire [31:0] instruction,
+		output wire [127:0] key,
         output wire [4095:0] big_buff_raw,
         input wire [4095:0] big_buff_out,
+        input wire dirty,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -49,6 +52,16 @@
 		.C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
 		.C_S_AXI_ADDR_WIDTH(C_S00_AXI_ADDR_WIDTH)
 	) qmaxi_v1_0_S00_AXI_inst (
+	// instruction
+	.slv_reg0(instruction),
+	// key
+	.slv_reg257(key[31:0]),
+	.slv_reg258(key[63:32]),
+	.slv_reg259(key[95:64]),
+	.slv_reg260(key[127:96]),
+	// dirty
+	.slv_reg263({31'b0,dirty}),
+	// bug buff
 	.slv_reg1(big_buff_raw[31:0]),
     .slv_reg2(big_buff_raw[63:32]),
     .slv_reg3(big_buff_raw[95:64]),
