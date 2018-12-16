@@ -37,6 +37,13 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 # To test this script, run the following commands from Vivado Tcl console:
 # source design_1_script.tcl
 
+
+# The design that will be created by this Tcl script contains the following 
+# module references:
+# coproc
+
+# Please add the sources of those modules before sourcing this Tcl script.
+
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
 # <./myproj/project_1.xpr> in the current working folder.
@@ -161,6 +168,17 @@ proc create_root_design { parentCell } {
 
   # Create ports
 
+  # Create instance: coproc_0, and set properties
+  set block_name coproc
+  set block_cell_name coproc_0
+  if { [catch {set coproc_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $coproc_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
   set_property -dict [ list \
@@ -575,8 +593,13 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins ps7_0_axi_periph/M00_AXI] [get_bd_intf_pins qmaxi_0/S00_AXI]
 
   # Create port connections
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins qmaxi_0/s00_axi_aclk] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
+  connect_bd_net -net coproc_0_dirty [get_bd_pins coproc_0/dirty] [get_bd_pins qmaxi_0/dirty]
+  connect_bd_net -net coproc_0_output_data [get_bd_pins coproc_0/output_data] [get_bd_pins qmaxi_0/big_buff_out]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins coproc_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins qmaxi_0/s00_axi_aclk] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
+  connect_bd_net -net qmaxi_0_big_buff_raw [get_bd_pins coproc_0/input_data] [get_bd_pins qmaxi_0/big_buff_raw]
+  connect_bd_net -net qmaxi_0_instruction [get_bd_pins coproc_0/instruction] [get_bd_pins qmaxi_0/instruction]
+  connect_bd_net -net qmaxi_0_key [get_bd_pins coproc_0/key] [get_bd_pins qmaxi_0/key]
   connect_bd_net -net rst_ps7_0_50M_interconnect_aresetn [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins rst_ps7_0_50M/interconnect_aresetn]
   connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins qmaxi_0/s00_axi_aresetn] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
 
