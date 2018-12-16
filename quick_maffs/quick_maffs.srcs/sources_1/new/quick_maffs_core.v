@@ -52,7 +52,7 @@ module quick_maffs_core(
     // SHARED RESOURCES
     
     quick_maffs_alu alu(.op1(op1_alu), .op2(op2_alu), .instruction(instruction_alu), .result(result_alu));
-    quick_maffs_multipler_dsp multipler(.op1(op1_multiplier), .op2(op2_multiplier), .result(result_multiplier));
+    quick_maffs_multiplier_dsp multiplier(.op1(op1_multiplier), .op2(op2_multiplier), .result(result_multiplier));
     
     assign flags = instruction[31:28];
     assign opcode = instruction[27:4];
