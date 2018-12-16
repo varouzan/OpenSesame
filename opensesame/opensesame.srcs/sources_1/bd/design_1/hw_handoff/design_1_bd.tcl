@@ -167,6 +167,7 @@ proc create_root_design { parentCell } {
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
 
   # Create ports
+  set clk_0 [ create_bd_port -dir I -type clk clk_0 ]
 
   # Create instance: coproc_0, and set properties
   set block_name coproc
@@ -593,9 +594,10 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins ps7_0_axi_periph/M00_AXI] [get_bd_intf_pins qmaxi_0/S00_AXI]
 
   # Create port connections
+  connect_bd_net -net clk_0_1 [get_bd_ports clk_0] [get_bd_pins coproc_0/clk]
   connect_bd_net -net coproc_0_dirty [get_bd_pins coproc_0/dirty] [get_bd_pins qmaxi_0/dirty]
   connect_bd_net -net coproc_0_output_data [get_bd_pins coproc_0/output_data] [get_bd_pins qmaxi_0/big_buff_out]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins coproc_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins qmaxi_0/s00_axi_aclk] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins qmaxi_0/s00_axi_aclk] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
   connect_bd_net -net qmaxi_0_big_buff_raw [get_bd_pins coproc_0/input_data] [get_bd_pins qmaxi_0/big_buff_raw]
   connect_bd_net -net qmaxi_0_instruction [get_bd_pins coproc_0/instruction] [get_bd_pins qmaxi_0/instruction]
