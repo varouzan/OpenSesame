@@ -23,12 +23,10 @@
 module coproc(
     input wire [31:0] instruction,
     input wire [4095:0] input_data,
-    input wire [128:0] key,
+    input wire [127:0] key,
     input wire clk,
     output wire [4095:0] output_data,
-    output reg dirty,
-    output load,
-    output ready
+    output reg dirty
     );
     
     wire [3:0] flags;
@@ -37,31 +35,47 @@ module coproc(
     wire [4095:0] op1, op2;
     wire ready;
     reg reset;
-    reg load;
-    reg [3:0] pflags;
-        
+    reg toload,load;
+            
     reg enb_AESD, enb_AESE, enb_AESKG, enb_BFD, enb_BFE, enb_BFKG, enb_DESD, enb_DESE, enb_DESKG, enb_RSAD, enb_RSAE, enb_RSAKPG, enb_SHA, enb_MD5;
     
     assign flags = instruction[31:28];
     assign opcode = instruction[27:4];
     assign data_bus_width = instruction[3:0];
     
-    always @(posedge ready)
+    always @(posedge ready) dirty = 0;
+    
+    always @(flags[3])
     begin
-        dirty = 0;
+        dirty = 1;
     end
     
-    always @(posedge clk) 
+    always @(flags[3])
     begin
-        if (load == 1)
-            load = 0;
-        if (flags[3] != pflags[3])
-            load = 1;
-            dirty = !reset;
-        pflags = flags;
+        toload = 1;
     end
-        
-    qm_AES qmaes(clk, reset, load&(enb_AESD | enb_AESE), enb_AESD, input_data, key, ready, output_data);
+    
+    always @(posedge clk)
+    begin
+        if (~load & toload) begin
+            load = 1;
+        end
+        else begin
+            load = 0;
+            toload = 0;
+        end
+    end
+
+    qm_AES qmaes(
+        .clk(clk),
+        .reset(reset),
+        .load_i(load&(enb_AESD | enb_AESE)),
+        .decrypt_i(enb_AESD),
+        .data_i(input_data),
+        .key_i(key),
+        .ready_o(ready),
+        .data_o(output_data)
+        );
 //    qm_AESKG aeskg(.enable(enb_AESKG),.clk(clk),.aluout(alu_result));
 //    qm_BFD bfd(.enable(enb_BFD),.clk(clk),.aluout(alu_result));
 //    qm_BFE bfe(.enable(enb_BFE),.clk(clk),.aluout(alu_result));
@@ -81,7 +95,6 @@ module coproc(
             24'h2E5E71: // RESET!
             begin
                 reset <= 1;
-                dirty <= 0;
                 enb_AESD <= 0;
                 enb_AESE <= 0;
                 enb_AESKG <= 0;

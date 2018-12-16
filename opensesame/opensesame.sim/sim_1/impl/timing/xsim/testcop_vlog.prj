@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../opensesame.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../../opensesame.srcs/sources_1/bd/design_1/ipshared/5bb9/hdl/verilog" --include "../../../../../opensesame.srcs/sources_1/bd/design_1/ipshared/70fd/hdl" --include "/opt/Xilinx/Vivado/2018.2/data/xilinx_vip/include" \
+"testcop_time_impl.v" \
+"../../../../../opensesame.srcs/sources_1/imports/aes128lowarea/aes.v" \
+"../../../../../opensesame.srcs/sources_1/imports/aes128lowarea/byte_mixcolum.v" \
+"../../../../../opensesame.srcs/sources_1/new/coproc.v" \
+"../../../../../opensesame.srcs/sources_1/imports/aes128lowarea/keysched.v" \
+"../../../../../opensesame.srcs/sources_1/imports/aes128lowarea/mixcolum.v" \
+"../../../../../opensesame.srcs/sources_1/new/qm_AES.v" \
+"../../../../../opensesame.srcs/sources_1/imports/aes128lowarea/sbox.v" \
+"../../../../../opensesame.srcs/sources_1/imports/aes128lowarea/subbytes.v" \
+"../../../../../opensesame.srcs/sources_1/imports/aes128lowarea/word_mixcolum.v" \
+"../../../../../opensesame.srcs/sim_1/new/testcop.v" \
+
+# Do not sort compile order
+nosort
