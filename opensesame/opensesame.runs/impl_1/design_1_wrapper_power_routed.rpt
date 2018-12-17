@@ -1,7 +1,11 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+<<<<<<< HEAD
 | Date             : Sun Dec 16 20:30:52 2018
+=======
+| Date             : Sun Dec 16 15:09:35 2018
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 | Host             : danmanPC running 64-bit unknown
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,6 +34,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
+<<<<<<< HEAD
 | Total On-Chip Power (W)  | 2.006        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
@@ -38,6 +43,16 @@ Table of Contents
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 61.9         |
 | Junction Temperature (C) | 48.1         |
+=======
+| Total On-Chip Power (W)  | 1.833        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.688        |
+| Device Static (W)        | 0.145        |
+| Effective TJA (C/W)      | 11.5         |
+| Max Ambient (C)          | 63.9         |
+| Junction Temperature (C) | 46.1         |
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,6 +67,7 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
+<<<<<<< HEAD
 | Clocks                  |     0.037 |        4 |       --- |             --- |
 | Slice Logic             |     0.127 |    78137 |       --- |             --- |
 |   LUT as Logic          |     0.125 |    44327 |     53200 |           83.32 |
@@ -65,6 +81,21 @@ Table of Contents
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.150 |          |           |                 |
 | Total                   |     2.006 |          |           |                 |
+=======
+| Clocks                  |     0.025 |        4 |       --- |             --- |
+| Slice Logic             |     0.056 |    78137 |       --- |             --- |
+|   LUT as Logic          |     0.054 |    44322 |     53200 |           83.31 |
+|   F7/F8 Muxes           |     0.001 |     3136 |     53200 |            5.89 |
+|   Register              |    <0.001 |    26488 |    106400 |           24.89 |
+|   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
+|   LUT as Shift Register |    <0.001 |       60 |     17400 |            0.34 |
+|   Others                |     0.000 |      348 |       --- |             --- |
+| Signals                 |     0.077 |    58888 |       --- |             --- |
+| I/O                     |    <0.001 |        1 |       200 |            0.50 |
+| PS7                     |     1.529 |        1 |       --- |             --- |
+| Static Power            |     0.145 |          |           |                 |
+| Total                   |     1.833 |          |           |                 |
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +105,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
+<<<<<<< HEAD
 | Vccint    |       1.000 |     0.344 |       0.327 |      0.017 |
+=======
+| Vccint    |       1.000 |     0.174 |       0.158 |      0.016 |
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 | Vccaux    |       1.800 |     0.016 |       0.000 |      0.016 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -87,7 +122,11 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+<<<<<<< HEAD
 | Vccpint   |       1.000 |     0.752 |       0.718 |      0.034 |
+=======
+| Vccpint   |       1.000 |     0.750 |       0.718 |      0.032 |
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
@@ -137,7 +176,11 @@ Table of Contents
 +------------+-------------------------------------------------------------+-----------------+
 | Clock      | Domain                                                      | Constraint (ns) |
 +------------+-------------------------------------------------------------+-----------------+
+<<<<<<< HEAD
 | clk_0      | clk_0                                                       |            40.0 |
+=======
+| clk_0      | clk_0                                                       |           100.0 |
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 | clk_fpga_0 | design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            10.0 |
 +------------+-------------------------------------------------------------+-----------------+
 
@@ -151,6 +194,7 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
+<<<<<<< HEAD
 | design_1_wrapper                                 |     1.856 |
 |   design_1_i                                     |     1.856 |
 |     coproc_0                                     |     0.275 |
@@ -348,6 +392,205 @@ Table of Contents
 |               w1                                 |     0.001 |
 |             sbox1                                |     0.001 |
 |             sub1                                 |     0.002 |
+=======
+| design_1_wrapper                                 |     1.688 |
+|   design_1_i                                     |     1.688 |
+|     coproc_0                                     |     0.108 |
+|       inst                                       |     0.108 |
+|         qmaes                                    |     0.107 |
+|           genblk1[0].aes_inst                    |     0.004 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[10].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[11].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[12].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[13].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[14].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[15].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[16].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[17].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[18].aes_inst                   |     0.004 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[19].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[1].aes_inst                    |     0.004 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[20].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[21].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[22].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[23].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[24].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[25].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[26].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[27].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[28].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[29].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[2].aes_inst                    |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[30].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[31].aes_inst                   |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[3].aes_inst                    |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[4].aes_inst                    |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[5].aes_inst                    |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[6].aes_inst                    |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[7].aes_inst                    |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[8].aes_inst                    |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+|           genblk1[9].aes_inst                    |     0.003 |
+|             ks1                                  |    <0.001 |
+|             mix1                                 |     0.001 |
+|               w1                                 |    <0.001 |
+|             sbox1                                |    <0.001 |
+|             sub1                                 |    <0.001 |
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 |     processing_system7_0                         |     1.537 |
 |       inst                                       |     1.537 |
 |     ps7_0_axi_periph                             |     0.005 |
@@ -376,9 +619,15 @@ Table of Contents
 |               WR.b_channel_0                     |    <0.001 |
 |                 bid_fifo_0                       |    <0.001 |
 |                 bresp_fifo_0                     |    <0.001 |
+<<<<<<< HEAD
 |     qmaxi_0                                      |     0.038 |
 |       inst                                       |     0.038 |
 |         qmaxi_v1_0_S00_AXI_inst                  |     0.038 |
+=======
+|     qmaxi_0                                      |     0.037 |
+|       inst                                       |     0.037 |
+|         qmaxi_v1_0_S00_AXI_inst                  |     0.037 |
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 |     rst_ps7_0_50M                                |    <0.001 |
 |       U0                                         |    <0.001 |
 |         EXT_LPF                                  |    <0.001 |

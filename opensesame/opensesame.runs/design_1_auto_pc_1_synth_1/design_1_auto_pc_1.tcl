@@ -17,6 +17,12 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+<<<<<<< HEAD:opensesame/opensesame.runs/design_1_auto_pc_1_synth_1/design_1_auto_pc_1.tcl
+=======
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8:opensesame/opensesame.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.tcl
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 create_project -in_memory -part xc7z020clg484-1

@@ -2,8 +2,13 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+<<<<<<< HEAD
 # Start of session at: Sun Dec 16 20:20:45 2018
 # Process ID: 12275
+=======
+# Start of session at: Sun Dec 16 14:53:21 2018
+# Process ID: 14796
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 # Current directory: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/design_1_wrapper.vds
@@ -18,6 +23,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
+<<<<<<< HEAD
 INFO: Helper process launched with PID 12382 
 ---------------------------------------------------------------------------------
 Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1285.781 ; gain = 30.695 ; free physical = 11486 ; free virtual = 14438
@@ -40,6 +46,30 @@ INFO: [Synth 8-6155] done synthesizing module 'design_1_qmaxi_0_1' (6#1) [/home/
 INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_1' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-12275-danmanPC/realtime/design_1_rst_ps7_0_50M_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_1' (7#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-12275-danmanPC/realtime/design_1_rst_ps7_0_50M_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_1' requires 10 connections, but only 7 given [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/synth/design_1.v:311]
+=======
+INFO: Helper process launched with PID 14872 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1286.320 ; gain = 31.695 ; free physical = 7652 ; free virtual = 11424
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_coproc_0_0' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_coproc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_coproc_0_0' (1#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_coproc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (2#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' requires 68 connections, but only 63 given [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/synth/design_1.v:156]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/synth/design_1.v:321]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/synth/design_1.v:636]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (3#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (4#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/synth/design_1.v:636]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (5#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/synth/design_1.v:321]
+INFO: [Synth 8-6157] synthesizing module 'design_1_qmaxi_0_1' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_qmaxi_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_qmaxi_0_1' (6#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_qmaxi_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_50M_0' [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_50M_0' (7#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/.Xil/Vivado-14796-danmanPC/realtime/design_1_rst_ps7_0_50M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_50M' of module 'design_1_rst_ps7_0_50M_0' requires 10 connections, but only 7 given [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/synth/design_1.v:311]
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (8#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (9#1) [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
@@ -47,7 +77,11 @@ WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_AR
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port ACLK
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port ARESETN
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1330.406 ; gain = 75.320 ; free physical = 11493 ; free virtual = 14446
+=======
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1330.945 ; gain = 76.320 ; free physical = 7661 ; free virtual = 11433
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -60,10 +94,17 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1330.406 ; gain = 75.320 ; free physical = 11495 ; free virtual = 14448
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1330.406 ; gain = 75.320 ; free physical = 11495 ; free virtual = 14448
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1330.945 ; gain = 76.320 ; free physical = 7662 ; free virtual = 11435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1330.945 ; gain = 76.320 ; free physical = 7662 ; free virtual = 11435
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -74,6 +115,7 @@ Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.src
 Finished Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1/design_1_processing_system7_0_1_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_qmaxi_0_1/design_1_qmaxi_0_1/design_1_qmaxi_0_1_in_context.xdc] for cell 'design_1_i/qmaxi_0'
 Finished Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_qmaxi_0_1/design_1_qmaxi_0_1/design_1_qmaxi_0_1_in_context.xdc] for cell 'design_1_i/qmaxi_0'
+<<<<<<< HEAD
 Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
 Finished Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_in_context.xdc] for cell 'design_1_i/rst_ps7_0_50M'
 Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_coproc_0_1/design_1_coproc_0_1/design_1_coproc_0_1_in_context.xdc] for cell 'design_1_i/coproc_0'
@@ -83,6 +125,18 @@ Finished Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opens
 Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/qmcontr.xdc]
 Finished Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/qmcontr.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/qmcontr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+=======
+Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_coproc_0_0/design_1_coproc_0_0/design_1_coproc_0_0_in_context.xdc] for cell 'design_1_i/coproc_0'
+Finished Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_coproc_0_0/design_1_coproc_0_0/design_1_coproc_0_0_in_context.xdc] for cell 'design_1_i/coproc_0'
+Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_2/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_2/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/aes.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/aes.xdc:21]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/aes.xdc:21]
+Finished Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/aes.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/aes.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/aes.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/dont_touch.xdc]
@@ -91,16 +145,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
+<<<<<<< HEAD
 Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1633.375 ; gain = 0.000 ; free physical = 11196 ; free virtual = 14148
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11296 ; free virtual = 14249
+=======
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1633.922 ; gain = 0.000 ; free physical = 7348 ; free virtual = 11133
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7411 ; free virtual = 11238
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11296 ; free virtual = 14249
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7411 ; free virtual = 11238
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -373,10 +437,17 @@ Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_50M. (constraint
 Applied set_property DONT_TOUCH = true for design_1_i/coproc_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11298 ; free virtual = 14251
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11298 ; free virtual = 14252
+=======
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7424 ; free virtual = 11239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7424 ; free virtual = 11240
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -416,7 +487,11 @@ WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port M00_ACLK
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_1 has unconnected port M00_ARESETN
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11283 ; free virtual = 14240
+=======
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7406 ; free virtual = 11227
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -430,13 +505,21 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/processing_system7_0/FCLK_CLK0' to pin 'design_1_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11157 ; free virtual = 14113
+=======
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7236 ; free virtual = 11080
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11156 ; free virtual = 14112
+=======
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7234 ; free virtual = 11079
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -448,7 +531,11 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11153 ; free virtual = 14110
+=======
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7233 ; free virtual = 11078
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -472,7 +559,11 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11153 ; free virtual = 14110
+=======
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7233 ; free virtual = 11077
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -485,7 +576,11 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11153 ; free virtual = 14110
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7233 ; free virtual = 11077
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -497,25 +592,41 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11153 ; free virtual = 14110
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7233 ; free virtual = 11077
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11153 ; free virtual = 14110
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7233 ; free virtual = 11077
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11153 ; free virtual = 14110
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7233 ; free virtual = 11077
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11153 ; free virtual = 14110
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7233 ; free virtual = 11077
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -540,7 +651,11 @@ Report Cell Usage:
 |2     |design_1_coproc_0_1             |     1|
 |3     |design_1_processing_system7_0_1 |     1|
 |4     |design_1_qmaxi_0_1              |     1|
+<<<<<<< HEAD
 |5     |design_1_rst_ps7_0_50M_1        |     1|
+=======
+|5     |design_1_rst_ps7_0_50M_0        |     1|
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 |6     |IBUF                            |     1|
 +------+--------------------------------+------+
 
@@ -554,11 +669,19 @@ Report Instance Areas:
 |4     |      s00_couplers   |s00_couplers_imp_UYSKKA     |   177|
 +------+---------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11153 ; free virtual = 14110
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
 Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1633.375 ; gain = 75.320 ; free physical = 11211 ; free virtual = 14168
 Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11211 ; free virtual = 14168
+=======
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7233 ; free virtual = 11077
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1633.922 ; gain = 76.320 ; free physical = 7295 ; free virtual = 11135
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7306 ; free virtual = 11147
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -568,6 +691,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
+<<<<<<< HEAD
 35 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1633.375 ; gain = 378.289 ; free physical = 11196 ; free virtual = 14152
@@ -576,3 +700,13 @@ INFO: [Common 17-1381] The checkpoint '/home/danman/sauce/vivado/OpenSesame/open
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1633.375 ; gain = 0.000 ; free physical = 11170 ; free virtual = 14153
 INFO: [Common 17-206] Exiting Vivado at Sun Dec 16 20:21:30 2018...
+=======
+36 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 1633.922 ; gain = 379.297 ; free physical = 7256 ; free virtual = 11115
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1633.922 ; gain = 0.000 ; free physical = 7259 ; free virtual = 11118
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 16 14:54:07 2018...
+>>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
