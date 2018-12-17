@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Tue Dec 11 04:32:57 UTC 2018
-VLNV: user.org:user:qmaxi:1.0
-SynthRuntime: 66

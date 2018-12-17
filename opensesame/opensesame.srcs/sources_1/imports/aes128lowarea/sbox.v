@@ -55,7 +55,7 @@
 // First import
 //
 
-`timescale 1ns / 10ps
+`include "timescale.v"
 
 module sbox(clk,reset,data_i,decrypt_i,data_o);
 input clk;

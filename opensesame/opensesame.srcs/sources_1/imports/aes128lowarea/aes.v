@@ -55,7 +55,7 @@
 // First import
 //
 
-`timescale 1ns / 10ps
+`include "timescale.v"
 
 module aes(clk,reset,load_i,decrypt_i,data_i,key_i,ready_o,data_o);
 

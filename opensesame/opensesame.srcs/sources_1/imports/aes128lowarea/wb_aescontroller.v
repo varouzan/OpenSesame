@@ -41,7 +41,7 @@
 //
 // $Log: not supported by cvs2svn $
 //
-`timescale 1ns / 10ps
+`include "timescale.v"
 
 module wb_aes_controller(clk,reset,wb_stb_i,wb_dat_o,wb_dat_i,wb_ack_o,
                          wb_adr_i,wb_we_i,wb_cyc_i,wb_sel_i,

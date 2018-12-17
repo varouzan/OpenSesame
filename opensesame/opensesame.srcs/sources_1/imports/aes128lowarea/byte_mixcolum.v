@@ -55,7 +55,7 @@
 // First import
 //
 
-`timescale 1ns / 10ps
+`include "timescale.v"
 
 module byte_mixcolum(a,b,c,d,outx,outy);
 

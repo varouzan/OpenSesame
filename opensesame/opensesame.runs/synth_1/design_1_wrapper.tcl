@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -37,11 +34,11 @@ set_property ip_output_repo /home/danman/sauce/vivado/OpenSesame/opensesame/open
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
 add_files /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0_2/design_1_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0_2/design_1_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0_2/design_1_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_0_2/design_1_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_2/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_board.xdc]
+set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1.xdc]
+set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -52,8 +49,8 @@ set_property used_in_implementation false [get_files -all /home/danman/sauce/viv
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/aes.xdc
-set_property used_in_implementation false [get_files /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/aes.xdc]
+read_xdc /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/qmcontr.xdc
+set_property used_in_implementation false [get_files /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/constrs_1/new/qmcontr.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

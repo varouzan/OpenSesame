@@ -55,7 +55,7 @@
 // First import
 //
 
-`timescale 1ns / 10ps
+`include "timescale.v"
 
 module keysched(clk,reset,start_i,round_i,last_key_i,new_key_o,ready_o,sbox_access_o,sbox_data_o,sbox_data_i,sbox_decrypt_o);
 

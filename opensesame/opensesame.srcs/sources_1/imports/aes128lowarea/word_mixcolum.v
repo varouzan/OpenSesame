@@ -55,7 +55,7 @@
 // First import
 //
 
-`timescale 1ns / 10ps
+`include "timescale.v"
 
 module word_mixcolum(in,outx,outy);
 input [31:0] in;

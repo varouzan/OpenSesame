@@ -59,31 +59,19 @@ u32 isDirty() {
 
 int main(){
 	sendIns(QM_INS_RESET);
-	usleep(1);
-	while(1){
-		xil_printf("RAW: %s\n",raw);
-
-		writeData();
-		writeKey();
-		sendIns(QM_INS_AESEN);
-		//while (isDirty()) {
-			usleep(1);
-			//continue;
-		//}
-		readData();
-		xil_printf("ENC:%s\n",out);
-
-		memcpy(raw_32,out_32,512);
-		writeData();
-		writeKey();
-		sendIns(QM_INS_AESDE);
-		//while (isDirty()) {
-			usleep(1);
-			//continue;
-		//}
-		readData();
-		xil_printf("DEC:%s\n",out);
-		sleep(1);
-	}
+	sleep(1);
+	xil_printf("RAW: %s\n",raw);
+	writeData();
+	writeKey();
+	sendIns(QM_INS_AESEN);
+	sleep(1);
+	readData();
+	xil_printf("ENC:%s\n",out);
+	memcpy(raw_32,out_32,512);
+	writeData();
+	writeKey();
+	sendIns(QM_INS_AESDE);
+	sleep(1);
+	readData();
+	xil_printf("DEC:%s\n",out);
 }
-
