@@ -33,11 +33,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="zed"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-<<<<<<< HEAD
-    <Option Name="WTXSimLaunchSim" Val="1"/>
-=======
-    <Option Name="WTXSimLaunchSim" Val="76"/>
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
+    <Option Name="WTXSimLaunchSim" Val="2"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -65,31 +61,10 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-<<<<<<< HEAD
       <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/timescale.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/timescale.v"/>
           <Attr Name="ImportTime" Val="1108377662"/>
-=======
-      <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_processing_system7_0_0_2/design_1_processing_system7_0_0.xci">
-          <Proxy FileSetName="design_1_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_rst_ps7_0_50M_0_2/design_1_rst_ps7_0_50M_0.xci">
-          <Proxy FileSetName="design_1_rst_ps7_0_50M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_auto_pc_0_2/design_1_auto_pc_0.xci">
-          <Proxy FileSetName="design_1_auto_pc_0"/>
-        </CompFileExtendedInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
-        <FileInfo>
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -97,7 +72,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/aes.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/aes.v"/>
           <Attr Name="ImportTime" Val="1108377662"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -107,7 +81,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/byte_mixcolum.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/byte_mixcolum.v"/>
           <Attr Name="ImportTime" Val="1108377662"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -117,7 +90,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/keysched.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/keysched.v"/>
           <Attr Name="ImportTime" Val="1108377662"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -127,7 +99,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/mixcolum.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/mixcolum.v"/>
           <Attr Name="ImportTime" Val="1108377662"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -137,7 +108,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/qm_AES.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -145,7 +115,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/sbox.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/sbox.v"/>
           <Attr Name="ImportTime" Val="1108377662"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -155,7 +124,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/subbytes.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/subbytes.v"/>
           <Attr Name="ImportTime" Val="1108377662"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -165,7 +133,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/aes128lowarea/word_mixcolum.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../trunk/rtl/verilog/aes128lowarea/word_mixcolum.v"/>
           <Attr Name="ImportTime" Val="1108377662"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -175,7 +142,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/coproc.v">
         <FileInfo>
-<<<<<<< HEAD
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -187,8 +153,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_auto_pc_1/design_1_auto_pc_1.xci">
-          <Proxy FileSetName="design_1_auto_pc_1"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xci">
+          <Proxy FileSetName="design_1_processing_system7_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_qmaxi_0_1/design_1_qmaxi_0_1.xci">
+          <Proxy FileSetName="design_1_qmaxi_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1.xci">
           <Proxy FileSetName="design_1_rst_ps7_0_50M_1"/>
@@ -196,18 +165,12 @@
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_coproc_0_1/design_1_coproc_0_1.xci">
           <Proxy FileSetName="design_1_coproc_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xci">
-          <Proxy FileSetName="design_1_processing_system7_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_qmaxi_0_1/design_1_qmaxi_0_1.xci">
-          <Proxy FileSetName="design_1_qmaxi_0_1"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_auto_pc_1/design_1_auto_pc_1.xci">
+          <Proxy FileSetName="design_1_auto_pc_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
         <FileInfo>
-=======
-          <Attr Name="AutoDisabled" Val="1"/>
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -266,7 +229,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-<<<<<<< HEAD
     <FileSet Name="design_1_rst_ps7_0_50M_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_rst_ps7_0_50M_1">
       <Config>
         <Option Name="TopModule" Val="design_1_rst_ps7_0_50M_1"/>
@@ -274,9 +236,6 @@
       </Config>
     </FileSet>
     <FileSet Name="design_1_coproc_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_coproc_0_1">
-=======
-    <FileSet Name="design_1_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_processing_system7_0_0">
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
       <Config>
         <Option Name="TopModule" Val="design_1_coproc_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
@@ -288,15 +247,12 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-<<<<<<< HEAD
     <FileSet Name="design_1_qmaxi_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_qmaxi_0_1">
       <Config>
         <Option Name="TopModule" Val="design_1_qmaxi_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-=======
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -334,10 +290,7 @@
     </Run>
     <Run Id="design_1_auto_pc_1_synth_1" Type="Ft3:Synth" SrcSet="design_1_auto_pc_1" Part="xc7z020clg484-1" ConstrsSet="design_1_auto_pc_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_auto_pc_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-<<<<<<< HEAD
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -346,12 +299,7 @@
     </Run>
     <Run Id="design_1_rst_ps7_0_50M_1_synth_1" Type="Ft3:Synth" SrcSet="design_1_rst_ps7_0_50M_1" Part="xc7z020clg484-1" ConstrsSet="design_1_rst_ps7_0_50M_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_rst_ps7_0_50M_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-=======
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -369,29 +317,22 @@
     </Run>
     <Run Id="design_1_processing_system7_0_1_synth_1" Type="Ft3:Synth" SrcSet="design_1_processing_system7_0_1" Part="xc7z020clg484-1" ConstrsSet="design_1_processing_system7_0_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_processing_system7_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-<<<<<<< HEAD
     <Run Id="design_1_qmaxi_0_1_synth_1" Type="Ft3:Synth" SrcSet="design_1_qmaxi_0_1" Part="xc7z020clg484-1" ConstrsSet="design_1_qmaxi_0_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_qmaxi_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-=======
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
@@ -411,10 +352,7 @@
     </Run>
     <Run Id="design_1_auto_pc_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_1_auto_pc_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="design_1_auto_pc_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-<<<<<<< HEAD
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -430,12 +368,7 @@
     </Run>
     <Run Id="design_1_rst_ps7_0_50M_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_1_rst_ps7_0_50M_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="design_1_rst_ps7_0_50M_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-=======
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -467,9 +400,7 @@
     </Run>
     <Run Id="design_1_processing_system7_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_1_processing_system7_0_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="design_1_processing_system7_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -483,12 +414,9 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-<<<<<<< HEAD
     <Run Id="design_1_qmaxi_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_1_qmaxi_0_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="design_1_qmaxi_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -502,8 +430,6 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-=======
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
   </Runs>
   <Board>
     <Jumpers/>

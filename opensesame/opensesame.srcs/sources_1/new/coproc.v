@@ -22,13 +22,11 @@
 
 module coproc(
     input wire [31:0] instruction,
-    input wire [1023:0] input_data,
+    input wire [4095:0] input_data,
     input wire [127:0] key,
     input wire clk,
-    output wire [1023:0] output_data,
-    output reg dirty,
-    output wire debug_clock,
-    output wire debug_load
+    output wire [4095:0] output_data,
+    output reg dirty
     );
     
     wire [3:0] flags;
@@ -44,9 +42,6 @@ module coproc(
     assign flags = instruction[31:28];
     assign opcode = instruction[27:4];
     assign data_bus_width = instruction[3:0];
-    
-    assign debug_load = load;
-    assign debug_clock = clk;
     
     always @(posedge ready) dirty = 0;
     

@@ -1,11 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-<<<<<<< HEAD:opensesame/opensesame.cache/ip/2018.2/6324809b45ccd9e3/design_1_auto_pc_1_sim_netlist.v
 // Date        : Sun Dec 16 20:20:20 2018
-=======
-// Date        : Sun Dec 16 14:28:22 2018
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8:opensesame/opensesame.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0_sim_netlist.v
 // Host        : danmanPC running 64-bit unknown
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_auto_pc_1_sim_netlist.v

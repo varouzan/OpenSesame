@@ -23,7 +23,6 @@ int toggle = 0;
 void sendIns(u32 in) {
 	toggle = !toggle;
 	u32 instr = toggle*QM_INS_FLAGS + in;
-	xil_printf("INS: 0x%08x\n",instr);
 	QMAXI_mWriteReg(XPAR_QMAXI_0_S00_AXI_BASEADDR, QMAXI_S00_AXI_SLV_REG0_OFFSET, instr);
 }
 
@@ -61,7 +60,6 @@ u32 isDirty() {
 int main(){
 	sendIns(QM_INS_RESET);
 	sleep(1);
-<<<<<<< HEAD
 	xil_printf("RAW: %s\n",raw);
 	writeData();
 	writeKey();
@@ -76,35 +74,4 @@ int main(){
 	sleep(1);
 	readData();
 	xil_printf("DEC:%s\n",out);
-=======
-	sendIns(0);
-	sleep(1);
-	//while(1){
-		xil_printf("RAW: %s\n",raw);
-
-		writeData();
-		writeKey();
-		sendIns(QM_INS_AESEN);
-		//while (isDirty()) {
-			sleep(1);
-			//continue;
-		//}
-		isDirty();
-		readData();
-		xil_printf("ENC:%s\n",out);
-
-		memcpy(raw_32,out_32,512);
-		writeData();
-		writeKey();
-		sendIns(QM_INS_AESDE);
-		//while (isDirty()) {
-			sleep(1);
-			//continue;
-		//}
-		isDirty();
-		readData();
-		xil_printf("DEC:%s\n",out);
-		sleep(1);
-	//}
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8
 }

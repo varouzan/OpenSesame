@@ -1,11 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-<<<<<<< HEAD:opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.v
 // Date        : Sun Dec 16 20:20:21 2018
-=======
-// Date        : Sun Dec 16 14:28:22 2018
->>>>>>> 36fade56ed7fb379daca1838858c9d70d9e1d2f8:opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0_2/design_1_auto_pc_0_stub.v
 // Host        : danmanPC running 64-bit unknown
 // Command     : write_verilog -force -mode synth_stub
 //               /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_stub.v
