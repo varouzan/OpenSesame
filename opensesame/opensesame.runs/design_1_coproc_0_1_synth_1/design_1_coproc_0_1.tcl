@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 create_project -in_memory -part xc7z020clg484-1
 
@@ -30,7 +31,10 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_repo_paths /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0 [current_project]
+set_property ip_repo_paths {
+  /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0
+  /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0
+} [current_project]
 set_property ip_output_repo /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {

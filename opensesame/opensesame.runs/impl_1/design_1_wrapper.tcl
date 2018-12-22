@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -71,7 +72,11 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.cache/wt [current_project]
   set_property parent.project_path /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.xpr [current_project]
-  set_property ip_repo_paths /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0 [current_project]
+  set_property ip_repo_paths {
+  /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0
+  /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0
+  /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0
+} [current_project]
   set_property ip_output_repo /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]

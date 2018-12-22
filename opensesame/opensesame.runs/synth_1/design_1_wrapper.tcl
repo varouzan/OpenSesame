@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -29,7 +30,11 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_repo_paths /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0 [current_project]
+set_property ip_repo_paths {
+  /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0
+  /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0
+  /home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0
+} [current_project]
 set_property ip_output_repo /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
@@ -38,7 +43,7 @@ set_property used_in_implementation false [get_files -all /home/danman/sauce/viv
 set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_board.xdc]
 set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1.xdc]
 set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_50M_1/design_1_rst_ps7_0_50M_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
