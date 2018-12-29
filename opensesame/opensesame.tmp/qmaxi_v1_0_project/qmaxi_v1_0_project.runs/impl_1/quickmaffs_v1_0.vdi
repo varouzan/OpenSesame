@@ -1,0 +1,269 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec 29 16:37:53 2018
+# Process ID: 19473
+# Current directory: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.tmp/qmaxi_v1_0_project/qmaxi_v1_0_project.runs/impl_1
+# Command line: vivado -log quickmaffs_v1_0.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source quickmaffs_v1_0.tcl -notrace
+# Log file: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.tmp/qmaxi_v1_0_project/qmaxi_v1_0_project.runs/impl_1/quickmaffs_v1_0.vdi
+# Journal file: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.tmp/qmaxi_v1_0_project/qmaxi_v1_0_project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source quickmaffs_v1_0.tcl -notrace
+Command: link_design -top quickmaffs_v1_0 -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 5758 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1428.047 ; gain = 272.953 ; free physical = 9359 ; free virtual = 12976
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1509.078 ; gain = 81.031 ; free physical = 9334 ; free virtual = 12955
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1967.641 ; gain = 458.562 ; free physical = 8870 ; free virtual = 12510
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.63 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8874 ; free virtual = 12514
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8874 ; free virtual = 12514
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8873 ; free virtual = 12513
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8872 ; free virtual = 12512
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8871 ; free virtual = 12512
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8864 ; free virtual = 12505
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8864 ; free virtual = 12504
+Ending Logic Optimization Task | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8864 ; free virtual = 12505
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8860 ; free virtual = 12501
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 178b820b5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1967.641 ; gain = 0.000 ; free physical = 8861 ; free virtual = 12501
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1967.641 ; gain = 539.594 ; free physical = 8861 ; free virtual = 12501
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.tmp/qmaxi_v1_0_project/qmaxi_v1_0_project.runs/impl_1/quickmaffs_v1_0_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file quickmaffs_v1_0_drc_opted.rpt -pb quickmaffs_v1_0_drc_opted.pb -rpx quickmaffs_v1_0_drc_opted.rpx
+Command: report_drc -file quickmaffs_v1_0_drc_opted.rpt -pb quickmaffs_v1_0_drc_opted.pb -rpx quickmaffs_v1_0_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0'.
+WARNING: [IP_Flow 19-2207] Repository '/home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0'.
+WARNING: [IP_Flow 19-2207] Repository '/home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/danman/sauce/vivado/OpenSesame/ip_repo/qmaxi_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.tmp/qmaxi_v1_0_project/qmaxi_v1_0_project.runs/impl_1/quickmaffs_v1_0_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2031.672 ; gain = 32.016 ; free physical = 8946 ; free virtual = 12589
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2031.672 ; gain = 0.000 ; free physical = 8922 ; free virtual = 12567
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b53897c2
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2031.672 ; gain = 0.000 ; free physical = 8922 ; free virtual = 12567
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2031.672 ; gain = 0.000 ; free physical = 8922 ; free virtual = 12567
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 8455 I/O ports
+ while the target  device: 7z020 package: clg484, contains only 330 available user I/O. The target device has 330 usable I/O pins of which 0 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[0]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1000]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1001]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1002]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1003]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1004]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1005]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1006]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1007]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1008]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1009]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[100]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1010]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1011]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1012]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1013]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1014]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1015]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1016]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1017]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1018]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1019]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[101]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1020]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1021]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1022]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1023]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1024]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1025]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1026]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1027]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1028]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1029]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[102]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1030]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1031]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1032]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1033]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1034]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1035]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1036]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1037]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1038]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1039]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[103]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1040]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1041]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1042]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1043]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1044]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1045]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1046]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1047]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1048]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1049]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[104]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1050]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1051]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1052]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1053]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1054]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1055]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1056]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1057]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1058]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1059]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[105]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1060]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1061]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1062]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1063]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1064]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1065]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1066]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1067]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1068]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1069]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[106]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1070]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1071]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1072]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1073]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1074]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1075]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1076]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1077]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1078]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1079]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[107]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1080]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1081]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1082]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1083]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1084]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1085]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1086]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1087]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1088]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[1089]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance big_buff_out_IBUF[108]_inst (IBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 07732489
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2060.684 ; gain = 29.012 ; free physical = 8771 ; free virtual = 12423
+Phase 1 Placer Initialization | Checksum: 07732489
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2060.684 ; gain = 29.012 ; free physical = 8771 ; free virtual = 12423
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 07732489
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2060.684 ; gain = 29.012 ; free physical = 8773 ; free virtual = 12425
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 3 Warnings, 0 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 29 16:39:10 2018...

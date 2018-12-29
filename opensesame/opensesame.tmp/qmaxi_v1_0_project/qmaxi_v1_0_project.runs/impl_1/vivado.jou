@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec 29 16:37:53 2018
+# Process ID: 19473
+# Current directory: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.tmp/qmaxi_v1_0_project/qmaxi_v1_0_project.runs/impl_1
+# Command line: vivado -log quickmaffs_v1_0.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source quickmaffs_v1_0.tcl -notrace
+# Log file: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.tmp/qmaxi_v1_0_project/qmaxi_v1_0_project.runs/impl_1/quickmaffs_v1_0.vdi
+# Journal file: /home/danman/sauce/vivado/OpenSesame/opensesame/opensesame.tmp/qmaxi_v1_0_project/qmaxi_v1_0_project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source quickmaffs_v1_0.tcl -notrace
